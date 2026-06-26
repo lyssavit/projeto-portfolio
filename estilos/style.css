@@ -16,10 +16,11 @@
 
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.5em;
-    background-color: var(--fundo-principal);
-    color: var(--texto);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5em;
+  background-color: var(--fundo-principal);
+  color: var(--texto);
+    
 }
 
 
@@ -29,11 +30,14 @@ header{
   justify-content: flex-end;
   align-content: center;
 
+  
   background-color: var(--destaque);
   color: var(--texto);
   padding: 10px;
 
 }
+
+
 
 nav#menu ul{
   display: flex;
@@ -44,11 +48,11 @@ nav#menu ul{
   list-style: none;
 }
 
-nav#menu li{ /*Servirá apenas para resolver o problema que os icones da google tem e poder centraliza-los*/
+/*nav#menu li{ Serviria apenas para resolver o problema que os icones da google tem e poder centraliza-los
   display: flex;
   flex-flow: row nowrap;
   align-items: center; 
-}
+}*/
 
 nav#menu a{
 
@@ -103,6 +107,7 @@ section#ficha h1{
   color: var(--destaque);
   margin: 15px 0px;
   text-align: center;
+  line-height: 1em;
 }
 
 div#social{
@@ -124,3 +129,38 @@ div#social a:hover{
   color: var(--destaque-inverso);
 }
 
+section#detalhes{
+  grid-column: 2 / 3;
+}
+
+article{
+  background-color: var(--fundo-card);
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+article h2{
+  color: var(--destaque);
+  margin-bottom: 10px;
+  line-height: 1.2em;
+}
+
+
+.video-container{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  aspect-ratio: 16 / 9;
+}
+
+.video-container iframe{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+
+}
